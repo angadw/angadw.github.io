@@ -1,0 +1,710 @@
+.element {
+position:relative;
+z-index:1000;
+}
+.mb_panoramic {
+position:absolute;
+top:155px;
+left:0;
+z-index:0;
+width:100%;
+height:450px;
+margin:0 auto 0;
+}
+.white_bg {
+position:absolute;
+left:0;
+z-index:10;
+top:1320px;
+width:100%;
+height:1270px;
+background-color:#fff;
+}
+.mb_container {
+position:relative;
+top:0;
+z-index:20;
+display:block;
+width:960px;
+height:100%;
+margin:-20px auto 0;
+}
+.mb_container img.shaded_hr {
+position:absolute;
+top:1164px;
+left:50px;
+}
+.mb_hero {
+position:relative;
+z-index:30;
+overflow:hidden;
+width:1008px;
+height:380px;
+max-height:450px;
+margin-left:-24px;
+background-color:#444;
+}
+/* PAGE CONTAINER */
+.mb_page {
+position:relative;
+z-index:40;
+width:960px;
+margin:0 auto 0;
+background-color:transparent;
+}
+/* _____________ TOP BANNER / HERO AREA _____________ */
+.mb_toggle {
+position:relative;
+display:inline-block;
+z-index:50;
+top:10px;
+left:20px;
+font-size:14px;
+color:#999;
+}
+.mb_toggle p {
+display:inline;
+font-weight:normal;
+color:#000;
+padding-right:12px;
+}
+.mb_toggle a {
+color:#0144af;
+padding-left:12px;
+}
+.mb_hero_plate {
+position:absolute;
+top:35px;
+right:35px;
+width:400px;
+border-style:solid;
+border-width:1px;
+border-color:#ddd;
+-moz-box-shadow:0px 2px 2px 1px rgba(0, 0, 0, 0.20);
+-webkit-box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.20);
+box-shadow:0px 2px 2px 1px rgba(0, 0, 0, 0.20);
+background:rgb(255,255,255);
+background:rgba(255,255,255,0.90);
+}
+.mb_hero_text {
+margin:17px 20px 5px;
+}
+.mb_hero_text p {
+margin-bottom:2px;
+}
+.mb_hero_actions {
+display:inline-block;
+width:100%;
+text-align:center;
+}
+.mb_hero_text ul {
+margin:7px 0 0;
+padding:0;
+}
+.mb_hero_text ul li {
+list-style-position:inside;
+font-size:14px;
+line-height:1.5em;
+padding:0;
+margin:0;
+}
+
+/* _________________________ PLAN COLUMNS _________________________ */
+.mb_columns {
+position:relative;
+display:inline-block;
+width:1008px;
+min-width:1008px;
+margin-left:-24px;
+padding-left:12px;
+border-style:solid;
+border-width:0px 0 0px;
+border-color:red;
+}
+.mb_plan {
+position:relative;
+display:block;
+float:left;
+width:220px;
+max-width:220px;
+min-height:340px;
+margin:0 12px 0 12px;
+padding:0;
+background-color:#fff;
+font-family:Helvetica, Arial, sans-serif;
+border-style:solid;
+border-width:1px 1px 0 1px;
+border-color:#ccc;
+}
+a.goToPlan {
+position:relative;
+display:block;
+width:220px;
+max-width:220px;
+min-height:180px;
+margin:0;
+padding:0;
+overflow:hidden;
+text-decoration:none;
+border:0;
+color:#444;
+}
+a.goToPlan:hover {
+text-decoration:none;
+border:0;
+background-image:url('../../Consumer/Icons/coin_shadow.png');
+background-position:center 30px;
+background-repeat:no-repeat;
+color:#444;
+}
+.colHeight {
+height:auto;
+}
+.bronze_title {
+border-bottom:solid 1px #c88232;
+}
+.silver_title {
+border-bottom:solid 1px #b9b7b5;
+}
+.gold_title {
+border-bottom:solid 1px #eab72b;
+}
+.platinum_title {
+border-bottom:solid 1px #526980;
+}
+.mb_plan img {
+margin:45px 45px 35px;
+padding:0;
+}
+.mb_plan_titles {
+margin:0 30px 15px;
+padding-bottom:15px;
+font-size:20px;
+font-weight:100;
+font-family:Helvetica, Arial, sans-serif;
+}
+.mb_plan p {
+margin:0 30px 30px;
+font-size:12px !important;
+color:#666;
+line-height:1.3em;
+font-family:Helvetica, Arial, sans-serif;
+}
+.cse {
+position:absolute;
+z-index:400;
+top:0px;
+left:1px;
+white-space:nowrap;
+overflow:hidden;
+width:217px;
+height:27px;
+font-size:15px;
+color:#fff;
+line-height:1.7em; 
+text-align:center;
+border-style:solid;
+border-width:2px 2px 0 2px;
+border-color:#fff;
+background-color:#b9b7b5;
+}
+.cse a {
+color:#fff;
+padding:4px 31px 4px;
+}
+.cse a:hover {
+background-color:#acaba9;
+}
+/* _________________________ PLANS COST MENU COLUMNS _________________________ */
+.mb_cost_menu {
+position:relative;
+display:block;
+float:left;
+width:220px;
+max-width:220px !important;
+margin:0 12px 0 12px;
+padding:0;
+background-color:#fff;
+font-family:Helvetica, Arial, sans-serif;
+border-style:solid;
+border-width:0 1px 1px 1px;
+border-color:#ccc;
+}
+.bronze_cost {
+background-color:#c88232;
+}
+.silver_cost {
+background-color:#b9b7b5;
+}
+.gold_cost {
+background-color:#eab72b;
+}
+.platinum_cost {
+background-color:#526980;
+}
+.mb_cost_list {
+min-height:50px;
+padding:0;
+margin:10px 30px;
+color:#fff;
+}
+ul.mb_cost_list {
+list-style:none;
+margin:0;
+font-family:Helvetica, Arial, sans-serif;
+background-image:none;
+}
+ul.mb_cost_list li {
+width:220px;
+padding:13px 0 13px;
+margin:0;
+font-size:14px;
+text-align:center;
+line-height:1.3em;
+}
+.bronze li {
+border-bottom:solid 1px #d39b5b;
+}
+.silver li {
+border-bottom:solid 1px #c7c5c4;
+}
+.gold li {
+border-bottom:solid 1px #eec555;
+}
+.platinum li {
+border-bottom:solid 1px #758799;
+}
+li a.view_plans {
+height:33px;
+line-height:2.3em;
+text-align:center;
+overflow:hidden;
+white-space:nowrap;
+color:#fff;
+padding:10px 10px;
+}
+.bronze li a.view_plans {
+padding:21px 43px;
+background-color:#aa6f2b;
+}
+.bronze li a.view_plans:hover {
+background-color:#c88232;
+}
+.silver li a.view_plans {
+padding:21px 48px;
+background-color:#a1a6a9;
+}
+.silver li a.view_plans:hover {
+background-color:#b9b7b5;
+}
+.gold li a.view_plans {
+padding:21px 50px;
+background-color:#cda70d;
+}
+.gold li a.view_plans:hover {
+background-color:#eab72b;
+}
+.platinum li a.view_plans {
+padding:21px 37px;
+background-color:#46596d;
+}
+.platinum li a.view_plans:hover {
+background-color:#526980;
+}
+/* _________________________ SUBSIDY - DO YOU QUALIFY _________________________ */
+.mb_subsidy {
+position:relative;
+display:block;
+overflow:hidden;
+margin:20px auto 0;
+width:960px;
+min-height:116px;
+border-style:solid;
+border-width:1px;
+border-color:#ccc;
+background-color:#fff;
+-moz-box-shadow:0px 2px 2px 1px #ccc;
+-webkit-box-shadow:0px 2px 2px 1px #ccc;
+box-shadow:0px 2px 2px 1px #ccc;
+background-image:url('../../Consumer/Icons/subidy-calculator-icon-64.png');
+background-position:20px 25px;
+background-repeat:no-repeat;
+}
+.mb_subsidy_text {
+position:relative;
+display:inline-block;
+width:620px;
+margin:14px 0 1px 107px;
+}
+.mb_subsidy_text h2 {
+margin-top:0 !important;
+font-size:21px !important;
+line-height:1.2em;
+}
+a.mb_subsidy_button {
+position:relative;
+float:right;
+z-index:401;
+top:36px;
+right:20px;
+padding:10px 20px;
+font-size:16px;
+font-weight:bold;
+color:#0144af;
+text-decoration:none;
+border-top:solid 1px #efefef;
+border-right:solid 1px #d9d9d9;
+border-bottom:solid 1px #d0d0d0;
+border-left:solid 1px #e1e1e1;
+background: #ffffff;
+background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #f6f6f6)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #ffffff 0%, #f6f6f6 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #ffffff 0%, #f6f6f6 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #ffffff 0%, #f6f6f6 100%); /* IE10+ */
+background: linear-gradient(to bottom, #ffffff 0%, #f6f6f6 100%); /* W3C */
+}
+a.mb_subsidy_button:hover {
+border-top:solid 1px #d0d0d0;
+border-right:solid 1px #e1e1e1;
+border-bottom:solid 1px #efefef;
+border-left:solid 1px #d9d9d9;
+text-shadow:1px 2px 1px rgba(0, 0, 0, 0.16);
+color:#004ac0;
+background: #ffffff;
+background: -moz-linear-gradient(top, #f6f6f6 0%, #ffffff 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f6f6f6), color-stop(100%, #ffffff)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #f6f6f6 0%, #ffffff 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #f6f6f6 0%, #ffffff 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #f6f6f6 0%, #ffffff 100%); /* IE10+ */
+background: linear-gradient(to bottom, #f6f6f6 0%, #ffffff 100%); /* W3C */
+}
+a.mb_subsidy_button {
+width:174px \9;
+height:44px \9;
+background-image:url('../../Consumer/Images/Find%20Plans/subsidy_button.jpg') \9;
+background-position:center \9;
+background-repeat:repeat-x \9;
+}
+a.mb_subsidy_button:hover {
+background-image:url('../../Consumer/Images/Find%20Plans/subsidy_button_o.jpg') \9;
+background-position:center \9;
+background-repeat:repeat-x \9;
+}
+/* _________________________ CATASTOPHIC _________________________ */
+.mb_catastrophic {
+position:relative;
+width:960px;
+height:235px;
+margin:90px auto 0;
+background-image:url('../../Consumer/Images/Find%20Plans/hr_divider_large.png');
+background-position:50px bottom;
+background-repeat:no-repeat;
+background-color:#fff;
+}
+.mb_catastrophic h2 {
+margin-bottom:15px !important;
+}
+.mb_catastrophic p {
+font-size:16px !important;
+width:670px;
+line-height:1.3em;
+}
+.mb_catastrophic a img {
+margin:-3px 4px 0 0;
+}
+.mb_catastrophic a.catastrophic_logo {
+position:absolute;
+top:15px;
+right:58px;
+width:185px;
+margin:0;
+padding-top:77px;
+text-decoration:none;
+background-image:url('../../Consumer/Icons/catastophic-icon-65.png');
+background-position:center top;
+background-repeat:no-repeat;
+}
+a.catastrophic_logo:before {
+content:none;
+}
+.mb_catastrophic a.catastrophic_logo h2 {
+font-size:32px;
+color:#28539b;
+text-align:center;
+padding:0;
+margin:0 0 13px !important;
+}
+/* _________________________ VIDEO - HEALTHCARE 101 _________________________ */
+.mb_video {
+position:relative;
+width:960px;
+height:410px;
+margin:20px auto 0;
+background-image:url('../../Consumer/Images/Find%20Plans/hr_divider_large.png');
+background-position:50px bottom;
+background-repeat:no-repeat;
+background-color:#fff;
+}
+.mb_video_container {
+position:relative;
+width:480px;
+height:270px;
+margin:40px 0 0;
+padding:0;
+background-color:#000;
+background:url('../../Consumer/Images/Find%20Plans/video_fpo_only.jpg') no-repeat 0 0;
+}
+.mb_video .copy {
+position:absolute;
+display:inline-block;
+top:52px;
+right:45px;
+width:400px;
+margin:0;
+}
+.mb_video h2 {
+margin:0 auto 15px !important;
+text-align:center;
+}
+.mb_video .copy h3 {
+font-size:16px;
+margin-top:28px;
+}
+.mb_video .copy p {
+font-size:16px;
+line-height:1.3em;
+}
+.mb_video .copy ul.help_list {
+list-style-type:square;
+margin:20px 0 0 0;
+}
+.mb_video .copy ul.help_list li {
+font-size:15px;
+color:#05467c;
+padding:0 0 5px;
+}
+/* _________________________ CONNECT FORM _________________________ */
+.mb_connect {
+position:relative;
+display:inline-block;
+overflow:hidden;
+width:1008px;
+max-width:1008px;
+margin:30px 0 0 -24px;
+padding-left:24px;
+background-image:url('../../Consumer/Images/Find%20Plans/hr_divider_large.png');
+background-position:74px bottom;
+background-repeat:no-repeat;
+background-color:#fff;
+}
+.mb_connect_column {
+position:relative;
+display:block;
+float:left;
+width:302px;
+max-width:302px !important;
+height:auto;
+margin:20px 12px 70px 12px;
+padding:0;
+border-style:solid;
+border-width:1px;
+border-color:#ccc;
+}
+.or_icon {
+position:absolute;
+z-index:1000;
+top:200px;
+width:48px;
+height:48px;
+background-image:url('../../Consumer/Icons/icon_or.png');
+background-position:0 0;
+background-repeat:no-repeat;
+}
+.first {
+left:316px;
+}
+.second {
+left:644px;
+}
+.mb_connect h2 {
+text-align:center;
+}
+.mb_connect h3 {
+font-size:16px;
+padding:18px;
+border-bottom:solid 1px #ccc;
+}
+.mb_connect p {
+padding:0 18px;
+}
+.mb_connect a.chat {
+display:inline-block;
+margin:10px 0 20px 17px;
+border:none;
+}
+.mb_connect a.chat:hover {
+text-decoration:none;
+}
+button.connect_go {
+margin-bottom: 20px;
+position:relative;
+display:block;
+margin-left: 20px;
+max-width:258px;
+white-space:nowrap;
+font-size:14px;
+font-weight:bold;
+text-transform:uppercase;
+padding:10px 100px;
+text-decoration:none;
+color:#fff;
+border:solid 1px #8eb810;
+background: #92b82a;
+background: -moz-linear-gradient(top, #92b82a 0%, #73990b 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #92b82a), color-stop(100%, #73990b)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #92b82a 0%, #73990b 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #92b82a 0%, #73990b 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #92b82a 0%, #73990b 100%); /* IE10+ */
+background: linear-gradient(to bottom, #92b82a 0%, #73990b 100%); /* W3C */
+}
+button.connect_go:hover {
+background: #a9cb4e;
+background: -moz-linear-gradient(top, #a9cb4e 0%, #88a92c 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a9cb4e), color-stop(100%, #88a92c)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #a9cb4e 0%, #88a92c 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #a9cb4e 0%, #88a92c 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #a9cb4e 0%, #88a92c 100%); /* IE10+ */
+background: linear-gradient(to bottom, #a9cb4e 0%, #88a92c 100%); /* W3C */
+}
+button.connect_go { /* IE9 */
+background-image:url('../../Consumer/Images/Find%20Plans/green_button.jpg') \9;
+background-position:center center 0 \9;
+background-repeat:repeat-x \9;
+}
+button.connect_go:hover { /* IE9 */
+background-image:url('../../Consumer/Images/Find%20Plans/green_button_o.jpg') \9;
+background-position:center center 0 \9;
+background-repeat:repeat-x \9;
+}
+a.walk_in {
+position:relative;
+display:inline-block;
+margin:10px 0 0 30px;
+font-size:16px;
+font-weight:bold;
+}
+a.walk_in img {
+margin-right:10px;
+}
+/* _________________________ GLOBAL STYLES _________________________ */
+.mb_container p {
+font-size:14px;
+line-height:1.4em;
+}
+.mb_container .mb_plan p {
+line-height:13px;
+}
+.mb_container h1 {
+font-size:36px;
+font-weight:100;
+color:#05467c;
+letter-spacing:-0.05em;
+margin:0 0 10px 0;
+}
+.mb_container h2 {
+margin:0 0 7px;
+font-size:22px;
+font-weight:100;
+color:#05467c;
+}
+.mb_container h2.learn_more {
+margin:20px 0 15px;
+}
+/* _________ Green Get a Quote button _________ */
+.mb_quote_links {
+position:relative;
+display:inline-block;
+margin-top:12px;
+}
+a.greenButton_getQuote {
+position:relative;
+display:block;
+font-size:19px;
+font-weight:normal;
+padding:9px 40px 11px;
+margin:4px 0 10px;
+text-decoration:none;
+color:#fff;
+border:solid 1px #8eb810;
+background: #92b82a;
+background: -moz-linear-gradient(top, #92b82a 0%, #73990b 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #92b82a), color-stop(100%, #73990b)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #92b82a 0%, #73990b 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #92b82a 0%, #73990b 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #92b82a 0%, #73990b 100%); /* IE10+ */
+background: linear-gradient(to bottom, #92b82a 0%, #73990b 100%); /* W3C */
+}
+a.greenButton_getQuote:hover {
+background: #a9cb4e;
+background: -moz-linear-gradient(top, #a9cb4e 0%, #88a92c 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a9cb4e), color-stop(100%, #88a92c)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #a9cb4e 0%, #88a92c 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #a9cb4e 0%, #88a92c 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #a9cb4e 0%, #88a92c 100%); /* IE10+ */
+background: linear-gradient(to bottom, #a9cb4e 0%, #88a92c 100%); /* W3C */
+}
+a.greenButton_getQuote { /* IE9 */
+background-image:url('../../Consumer/Images/Find%20Plans/green_button.jpg') \9;
+background-position:center \9;
+background-repeat:repeat-x \9;
+}
+a.greenButton_getQuote:hover { /* IE9 */
+background-image:url('../../Consumer/Images/Find%20Plans/green_button_o.jpg') \9;
+background-position:center \9;
+background-repeat:repeat-x \9;
+}
+.float_left {
+float:left !important;
+}
+.float_right {
+float:right !important;
+}
+.float_none {
+float:none !important;
+}
+.mb_hero_text .continueApp {
+position:relative;
+top:13px;
+margin-left:18px;
+font-size:14px;
+}
+p.view_more a {
+position:relative;
+top:5px;
+padding:0;
+font-size:15px;
+}
+p.view_more:before {
+position:relative;
+top:3px;
+content:"\25b6";
+font-size:10px;
+font-family:"Courier New", Courier, monospace;
+color:#27afc6;
+margin-right:4px;
+}
+.control-group {
+margin:0 20px 0;
+}
+.control-group input {
+width:258px;
+margin:0 0 4px;
+}
+.control-group select {
+width:258px;
+margin:0 0 14px;
+}
+label.checkbox input[type="checkbox"] {
+width:inherit;
+}

@@ -1,0 +1,44 @@
+.ratings .empty {
+    background-image:url("../img/ratingStars_inactive.png");
+}
+
+.ratings .full {
+    background-image:url("../img/ratingStars_active.png");
+}
+
+.ratings-bar {
+    background-repeat:repeat-x;
+    height:16px;
+}
+
+.ratings-stars {
+    width:80px;
+    height:16px;
+}
+
+.ratings-star {
+    float:left;
+    background-repeat:no-repeat;
+    height:22px;
+    width:21px;
+}
+
+.comments-count .ratings-bar.empty {
+    width:80px;
+}
+
+.comments-count .ratings-bar.full {
+    width:0;
+}
+
+.comment-header .ratings-stars {
+    float:right;
+    height:30px;
+    padding-top:6px;
+    margin-right:5px;
+}
+
+.comment-header .ratings-bar.empty {
+    width:80px;
+}
+

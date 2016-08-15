@@ -1,0 +1,382 @@
+#subsidyModal {
+max-height: 625px;
+width: 700px;
+border: 10px solid rgba(15,69,206,.30);
+text-align: left;
+}
+#subsidyModal hr {
+margin:10px 0 5px 0;
+}
+#subsidyModal .modal-header {
+padding:15px 15px 0;
+}
+#subsidyModal h3 {
+font-size: 20px;
+margin-top:10px;
+}
+#subsidyModal .subsidy-modal-body {
+position: relative;
+padding: 15px;
+}
+#subsidyModal .panel-group .panel {
+border: 0;
+border-left: 8px solid #CCC;
+border-radius: 0;
+}
+#subsidyModal .panel-group .panel.dirty {
+border-left-color: #85C24A;
+}
+#subsidyModal .panel-group .panel.active {
+border-left-color: #4582D2;
+}
+#subsidyModal .panel-group .panel.has-error {
+border-left-color: #CC383A;
+}
+#subsidyModal .panel-group .panel-default > .panel-heading {
+background-color: #FFFFFF;
+}
+#subsidyModal .panel-group .panel-heading + .panel-collapse > .panel-body {
+border-top: 0;
+}
+#subsidyModal span, #subsidyModal p {
+font-size: 12px;
+}
+#subsidyModal.modal.fade.in {
+top: 40%;
+}
+#subsidyModal .next-button {
+height: 48px;
+width: 100%;
+margin-top: 5px;
+margin-bottom: 0;
+padding: 0 15px;
+color: #FFFFFF;
+font-weight: bold;
+font-size: 16px;
+border-radius: 0;
+border: 0;
+background: #92b82a;
+background: -moz-linear-gradient(top, #92b82a 0%, #73990b 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #92b82a), color-stop(100%, #73990b));
+background: -webkit-linear-gradient(top, #92b82a 0%, #73990b 100%);
+background: -o-linear-gradient(top, #92b82a 0%, #73990b 100%);
+background: -ms-linear-gradient(top, #92b82a 0%, #73990b 100%);
+background: linear-gradient(to bottom, #92b82a 0%, #73990b 100%);
+filter: progidXImageTransform.Microsoft.gradient( startColorstr='#92b82a', endColorstr='#73990b', GradientType=0 );
+}
+#subsidyModal .submit-button {
+height: 48px;
+width: 100%;
+margin-top: 12px;
+margin-bottom: 0;
+padding: 0 15px;
+color: #FFFFFF;
+font-weight: bold;
+font-size: 16px;
+border-radius: 0;
+border: 0;
+background: #3d72b4; /* Old browsers */ /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: -moz-linear-gradient(top, #3d72b4 0%, #13488a 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3d72b4), color-stop(100%, #13488a)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #3d72b4 0%, #13488a 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #3d72b4 0%, #13488a 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #3d72b4 0%, #13488a 100%); /* IE10+ */
+background: linear-gradient(to bottom, #3d72b4 0%, #13488a 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d72b4', endColorstr='#13488a', GradientType=0 ); /* IE6-8 */
+}
+#subsidyModal .submit-button:hover {
+background: #5f8dc6; /* Old browsers */ /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: -moz-linear-gradient(top, #5f8dc6 0%, #35639d 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5f8dc6), color-stop(100%, #35639d)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #5f8dc6 0%, #35639d 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #5f8dc6 0%, #35639d 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #5f8dc6 0%, #35639d 100%); /* IE10+ */
+background: linear-gradient(to bottom, #5f8dc6 0%, #35639d 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f8dc6', endColorstr='#35639d', GradientType=0 ); /* IE6-8 */
+}
+#subsidyModal .panel-body {
+padding-top: 5px;
+}
+#subsidyModal .edit-link {
+color: blue;
+}
+#subsidyModal .edit-link:hover {
+cursor: pointer;
+color: blue;
+}
+#subsidyModal .family-row .edit-row {
+margin-top: -10px;
+height: 55px;
+margin-bottom: 10px;
+}
+#subsidyModal .glyphicon-plus {
+font-size: 20px;
+color: #85C24A;
+top: 0;
+position: absolute;
+}
+#subsidyModal .glyphicon-user {
+font-size: 24px;
+}
+#subsidyModal .user-adult, #subsidyModal .user-child {
+height: 35px;
+position: relative;
+display: inline-block;
+width: 50px;
+text-align: center;
+margin-right: 5px;
+}
+#subsidyModal .user-child {
+margin-right: 5px;
+}
+#subsidyModal .user-adult span.close, #subsidyModal .user-child span.close {
+position: absolute;
+top: 0;
+right: 5px;
+}
+#subsidyModal .user-adult span.close:hover, #subsidyModal .user-child span.close:hover {
+cursor: pointer;
+}
+#subsidyModal .user-adult .form-control {
+border-radius: 0;
+border-top: 0;
+border-right: 0;
+border-left: 0;
+text-align: center;
+height: 30px;
+}
+#subsidyModal .subsidy-results.eligible {
+background-color: #DBEEF4;
+}
+#subsidyModal .subsidy-results.ineligible {
+background-color: #FFFADD;
+}
+#subsidyModal .subsidy-results {
+padding-left: 50px;
+padding-right: 50px;
+}
+#subsidyModal .subsidy-results p {
+margin:0;
+}
+#subsidyModal .subsidy-results h3 {
+font-size: 20px;
+padding-bottom:10px;
+}
+#subsidyModal .subsidy-results .summary {
+padding-left: 23px;
+margin-bottom:10px;
+}
+#subsidyModal .subsidy-results .glyphicon {
+padding-right: 10px;
+color: #0948AF;
+}
+#subsidyModal .return-links {
+padding:10px 35px 0;
+}
+#subsidyModal .return-links a {
+color:#000;
+font-size:12px;
+}
+#subsidyModal .return-links .glyphicon {
+padding-right: 10px;
+}
+#subsidyModal .return-links span {
+padding: 0px 5px;
+}
+#subsidyModal .return-links span:hover {
+cursor: pointer;
+}
+#subsidyModal .view-plans-row {
+padding-left: 25px;
+}
+#subsidyModal .learn-more-row {
+padding:0 0 10px 0;
+}
+#subsidyModal .medicaid .col-md-4 {
+margin-top: 15px;
+margin-bottom: 15px;
+}
+#subsidyModal .medicaid .col-md-4 p {
+text-align: center;
+}
+#subsidyModal .medicaid .fa {
+font-size: 60px;
+display: block;
+text-align: center;
+color: #0747A7;
+}
+#subsidyModal .medicaid .fa-mobile {
+font-size: 73px;
+margin-top: -13px;
+}
+#subsidyModal .medicaid .col-middle {
+border-left: 1px solid #E8E8E8;
+border-right: 1px solid #E8E8E8;
+}
+/* =================================================================== */
+/* ========== Added by Christopher Rollman on 30JULY2015 JIRA# 4254 ========== */
+/* =================================================================== */
+.add_adults, .add_children {
+margin:7px 0 7px 15px;
+}
+a.accordion-toggle:hover {
+text-decoration:none;
+}
+.family-row h2 {
+position:relative;
+display:relative;
+border-bottom:solid 1px #ccc;
+padding-bottom:3px;
+margin-top:5px;
+margin-left:15px;
+margin-bottom:0;
+font-size:12px;
+}
+.family-row h2 span {
+font-weight:normal;
+font-size:12px;
+}
+.edit-header {
+float:right;
+margin-right:15px;
+}
+div.add_member_button {
+display:inline-block;
+width:65px;
+height:65px;
+overflow:hidden;
+margin-right:15px;
+border:dotted 1px #ccc;
+-webkit-border-radius:3px;
+-moz-border-radius:3px;
+border--radius:3px;
+background-image:url(../../shared/images/add-user-button.jpg);
+background-repeat:no-repeat;
+background-position:0 0;
+}
+div.add_member_button:hover {
+cursor:pointer;
+border:solid 1px #749A0C;
+background-image:url(../../shared/images/add-user-button-o.jpg);
+background-repeat:no-repeat;
+background-position:0 0;
+}
+/* __________________ member pods __________________ */
+.member_pod {
+position:relative;
+display:inline-block;
+overflow:hidden;
+width:65px;
+height:65px;
+overflow:hidden;
+margin-right:10px;
+border:solid 1px #ccc;
+-webkit-border-radius:3px;
+-moz-border-radius:3px;
+border--radius:3px;
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 1%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgba(255,255,255,1)), color-stop(100%, rgba(237,237,237,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 1%, rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(255,255,255,1) 1%, rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(255,255,255,1) 1%, rgba(237,237,237,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(255,255,255,1) 1%, rgba(237,237,237,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 ); /* IE6-9 */
+}
+.member_pod img {
+position:relative;
+top:6px;
+left:0;
+}
+div.pod_controls_active {
+position:absolute;
+bottom:0;
+width:65px;
+height:22px;
+border-top:solid 1px #aaa;
+background-color:#ebebeb;
+}
+div.preview {
+font-weight:bold;
+text-align:center;
+padding-top:2px;
+border-top:0;
+background-color:transparent !important;
+}
+input.add_age {
+display:inline-block;
+width:45px;
+height:22px;
+font-size:10pt;
+font-weight:normal;
+36 color:#444;
+text-align:center;
+padding-right:5px;
+border:solid 1px #fff;
+background: rgb(204,204,204); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(204,204,204,1) 0%, rgba(255,255,255,1) 27%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(204,204,204,1)), color-stop(27%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(204,204,204,1) 0%, rgba(255,255,255,1) 27%, rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(204,204,204,1) 0%, rgba(255,255,255,1) 27%, rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(204,204,204,1) 0%, rgba(255,255,255,1) 27%, rgba(255,255,255,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(204,204,204,1) 0%, rgba(255,255,255,1) 27%, rgba(255,255,255,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#ffffff', GradientType=0 ); /* IE6-9 */
+}
+p.add_age {
+font-size:11pt !important;
+font-weight:bold !important;
+padding-top:1px;
+color:#444 !important;
+}
+span.close_pod {
+display:inline-block;
+position:absolute;
+overflow:hidden;
+cursor:pointer;
+right:0;
+bottom:0;
+width:20px;
+height:20px;
+background-image:url(../../shared/images/delete-user-button.jpg);
+background-repeat:no-repeat;
+background-position:-3px -2px;
+border-left:solid 1px #ccc;
+}
+span.close_pod:hover {
+background-image:url(../../shared/images/delete-user-button-o.jpg);
+background-repeat:no-repeat;
+background-position:-3px -2px;
+}
+#subsidyModal .panel-heading {
+padding-top:5px;
+padding-bottom:5px;
+}
+
+/* ====================================================================== */
+/* ========== Added by Christopher Rollman on 20OCT2015 JIRA# RR-5981 ========== */
+/* ===================================================================== */
+#subsidyModal a.next-button, #subsidyModal a.submit-button {
+display: inline-block;
+min-height: 48px;
+width: auto;
+padding: 13px 20px 16px;
+margin-top:15px;
+margin-bottom:10px;
+font-weight:normal;
+}
+div.eligible a.next-button {
+margin-right:30px;
+margin-left:130px;
+}
+div.eligible h3.yes_title {
+display:block;
+margin-left:35px;
+padding-top:10px;
+}
+div.ineligible a.next-button {
+margin-left:240px;
+}
+
+
+
+
