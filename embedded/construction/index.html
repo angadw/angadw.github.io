@@ -26,6 +26,27 @@
     <!--CUSTOM STYLE -->
     <link href="assets/css/style.css" rel="stylesheet" />
 	<script src="https://presales.appiancloud.com/suite/tempo/tempo.nocache.js"></script>
+	<script>
+         function render() {
+         var scriptFrame = document.createElement('iframe');
+         scriptFrame.id = "embedded-iframe";
+         scriptFrame.src = 'javascript:""';
+         scriptFrame.style.width = "100%";
+         scriptFrame.style.height = "750px";
+         content.appendChild(scriptFrame);
+         
+         frameDoc = scriptFrame.contentDocument;
+         if (!frameDoc) {
+         frameDoc = scriptFrame.contentWindow.document;
+         }
+         
+         var html = '<html>\n<head></head>\n<body style="height: 725px;">\n<script src="https://presales.appiancloud.com/suite/tempo/tempo.nocache.js"' + '></scrip' + 't>\n<appian-action processModelUuid="0003db7e-02e8-8000-f92f-7f0000014e7a" themeIdentifier="construction"/>\n</body></html>';
+         
+         frameDoc.open();
+         frameDoc.write(html);
+         frameDoc.close();
+         }
+      </script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -70,9 +91,10 @@
 
     </div>
     <!-- END SLIDER SECTION -->
-	<div class="container">
-		<appian-action processModelUuid="0003db7e-02e8-8000-f92f-7f0000014e7a" themeIdentifier="construction"/>
-	</div>
+	<div id="content" style="max-width: 1200px;" />
+      <script>
+         render();
+      </script>
     <div class="container">
         <div class="row main-low-margin text-center">
             <div class="col-md-4 col-sm-4">
